@@ -1,0 +1,38 @@
+{
+  "name": "ts-pipeline",
+  "version": "0.1.0",
+  "description": "Pipe functions together in a type-safe manner.",
+  "main": "./index.js",
+  "typings": "./index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jonathanconway/ts-pipeline"
+  },
+  "author": "Jonathan Conway<jonathan.conway@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc --outDir dist/ && cp ./package.json ./dist/",
+    "test": "jest",
+    "lint": "tslint --project tsconfig.json --format stylish",
+    "run-script": "npm run lint && npm run build && npm run test"
+  },
+  "devDependencies": {
+    "@types/jest": "^24.0.0",
+    "jest": "^24.1.0",
+    "ts-jest": "^24.0.0",
+    "ts-node": "^8.0.1",
+    "tslint": "^5.7.0",
+    "typescript": "^3.1.1"
+  },
+  "jest": {
+    "transform": {
+      ".(ts|tsx)": "ts-jest"
+    },
+    "testRegex": "(dist|src)/.*\\.test\\.(ts)x?$",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js"
+    ]
+  }
+}
