@@ -2,7 +2,7 @@
 
 In lieu of an official ES6 / Typescript pipe operator, here's my own simple, home-baked solution.
 
-## Examples
+## Example
 
 ```ts
 import { pipeline } from "ts-pipeline";
